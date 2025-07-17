@@ -32,6 +32,12 @@ requirements.in
 # Output files
 outputs/celeba/
 outputs/chestx-ray14/
+outputs/*.ipynb
+outputs/*.txt
+
+# Data files
+data/celeba
+data/chestx-ray14
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -68,3 +74,4 @@ target/
 
 # Tmp files
 tmp/
+*.zip

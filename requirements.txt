@@ -1,0 +1,25 @@
+# Core scientific computing
+numpy<2.0
+pandas<2.0
+scikit-learn
+scipy
+
+# Datset and model management
+pillow
+gdown
+natsort
+openpyxl
+
+# Deep Learning
+torch
+torchvision
+
+# Plotting & Notebooks
+matplotlib
+tqdm
+ipython
+jupyter
+dill # For advanced pickle serialization
+
+# For running the notebook via command line
+papermill
