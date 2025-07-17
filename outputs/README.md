@@ -27,18 +27,18 @@ Here is a breakdown of the files you will find inside each dataset-specific subd
 
 ### 📊 Plots (`.pdf`)
 Visualizations of the experimental results, ready for inclusion in your paper.
--   **`... - lineplot.pdf`**: The main performance plots (Accuracy, WSG Accuracy, etc.) comparing AMSEL to baselines across different test distributions ($\theta$).
--   **`... - dependency consensus level and balancing factor.pdf`**: A plot showing the relationship between the consensus score and the true balancing parameter $\theta$.
+-   **`... - lineplot.pdf`**: The main performance plots (Accuracy, WSG Accuracy, etc.) comparing AMSEL to baselines across different test distributions ($`\theta`$).
+-   **`... - dependency consensus level and balancing factor.pdf`**: A plot showing the relationship between the consensus score and the true balancing parameter $`\theta`$.
 -   **`... - Trade-Off Between Accuracy ... .pdf`**: A scatter plot visualizing the trade-off between performance on biased and unbiased test sets for the candidate models.
 
 ### 📋 LaTeX Tables (`.tex`)
 Formatted tables containing the precise numerical results.
--   **`... on test subset.tex`**: Detailed performance metrics for all models at each tested value of $\theta$.
+-   **`... on test subset.tex`**: Detailed performance metrics for all models at each tested value of $`\theta`$.
 -   **`... - AuC Accuracy.tex`**: A summary table with the Area Under the Curve (AUC) for the main accuracy plot, providing a single-number performance comparison.
 
 ### 🗂️ Cached Data (`.pkl`)
 To accelerate subsequent runs, the notebook caches intermediate results. These files can be large and are not typically meant for version control.
 -   **`..._erm-pred-and-conf.pkl`**: Caches the predictions and confidence scores from the baseline ERM models on the test set.
--   **`..._data_tasks.pkl`**: Caches the most time-consuming computations: the extracted features for all data splits and the family of trained candidate classifier heads ($h_\theta$).
+-   **`..._data_tasks.pkl`**: Caches the most time-consuming computations: the extracted features for all data splits and the family of trained candidate classifier heads ($`h_\theta`$).
 
 > **💡 Note:** If you wish to re-run the experiments from scratch, simply delete the `.pkl` files for the corresponding dataset. The notebook will automatically regenerate them.
