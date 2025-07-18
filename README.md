@@ -180,7 +180,7 @@ You can also run the notebook in Jupyter Lab. Just remember to set the `dataset_
 jupyter lab adaptive_model_selection.ipynb
 ```
 
-> ⏳ **Note on Execution Time and Caching**: Please be aware that the first time you run the experiment for a given dataset, it will be computationally intensive. On a modern GPU (e.g., an NVIDIA RTX 3090), this initial run can take approximately 30-60 minutes as it involves extracting features from the entire dataset and training the full family of candidate models. These artifacts are cached in the `outputs/[dataset_name]/` directory. Subsequent runs will be much faster! To re-run from scratch, simply delete the `.pkl` files in that folder.
+> ⏳ **Note on Execution Time and Caching**: Please be aware that the first time you run the experiment for a given dataset, it will be computationally intensive. On a modern GPU (e.g., an NVIDIA RTX 3090), this initial run can take approximately 30-60 minutes, in addition to the time required to download the datasets and model weights. This is because it involves extracting features from the entire dataset and training the full family of candidate models. These artifacts are cached in the outputs/[dataset_name]/ directory, so subsequent runs will be much faster! To re-run from scratch, simply delete the .pkl files in that folder.
 
 ### Reproducing Hyperparameter Search (Optional)
 
