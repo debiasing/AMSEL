@@ -171,7 +171,7 @@ screen -L -Logfile outputs/celeba_log.txt -S AMSEL-CelebA papermill --log-output
 screen -L -Logfile outputs/chestx-ray14_log.txt -S AMSEL-ChestX-ray14 papermill --log-output --progress-bar --request-save-on-cell-execute adaptive_model_selection.ipynb outputs/chestx-ray14_results.ipynb -p dataset_name chestx-ray14
 --->
 
-All generated plots and tables will be saved in the `outputs/` directory.
+All generated plots and tables will be saved in the `outputs/` directory. Depending on your hardware specifications, the execution time should be around one hour.
 
 #### Interactive Method
 
@@ -180,7 +180,7 @@ You can also run the notebook in Jupyter Lab. Just remember to set the `dataset_
 jupyter lab adaptive_model_selection.ipynb
 ```
 
-> **💡 Note on Caching:** The first run for each dataset will take some time as it computes features and trains all candidate models. These artifacts are cached in the `outputs/[dataset_name]/` directory. Subsequent runs will be much faster! To re-run from scratch, simply delete the `.pkl` files in that folder.
+> ⏳ **Note on Execution Time and Caching**: Please be aware that the first time you run the experiment for a given dataset, it will be computationally intensive. On a modern GPU (e.g., an NVIDIA RTX 3090), this initial run can take approximately 30-90 minutes as it involves extracting features from the entire dataset and training the full family of candidate models. These artifacts are cached in the `outputs/[dataset_name]/` directory. Subsequent runs will be much faster! To re-run from scratch, simply delete the `.pkl` files in that folder.
 
 ### Reproducing Hyperparameter Search (Optional)
 
