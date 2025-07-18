@@ -42,14 +42,14 @@ This approach allows AMSEL to be robust across a wide spectrum of strengthspurio
 
 ## ⚙️ Getting Started
 
-This project has been tested on Python 3.12. Follow these steps to set up your environment and run the experiments.
+This project has been tested on Ubuntu 22.04 with Python 3.12, Torch 2.7.1 and Cuda 12.6. Follow these steps to set up your environment and run the experiments.
 
 ### 1. Environment and Dependencies
 
 First, clone the repository and set up a virtual environment to keep dependencies isolated.
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/debiasing/AMSEL.git
 cd your-repo-name
 
 # Create and activate a conda environment (or use venv)
